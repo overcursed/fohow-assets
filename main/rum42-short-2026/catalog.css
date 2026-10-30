@@ -331,3 +331,26 @@
   .r42 .r42-qr-head h3{font-size:22px}
   .r42 .r42-phone-bar a{font-size:19px}
 }
+
+
+/* 2026-10-30: identical homepage contact panel on all pages */
+.r42 .r42-contact-phones{display:grid;gap:8px}
+.r42 .r42-contact-number .r42-contact-phones a,.r42 .r42-contact-number .r42-contact-secondary{font-size:clamp(24px,2.6vw,34px)!important;font-weight:780!important;line-height:1.15!important;opacity:1!important}
+@media(max-width:420px){
+ .r42 .r42-contact-number .r42-contact-phones a,.r42 .r42-contact-number .r42-contact-secondary{font-size:clamp(23px,6.6vw,29px)!important}
+}
+
+
+/* RUM-42 — copy button for each phone number (banner, menu and footer) */
+.r42 .r42-contact-copy-actions{display:grid;gap:8px;justify-items:stretch;min-width:194px}
+.r42 .r42-contact-copy-actions button{white-space:nowrap;font-size:14px;min-height:44px;padding:9px 13px}
+.r42 .r42-phone-with-copy{display:flex;align-items:center;gap:8px;min-width:0}
+.r42 .r42-phone-with-copy a{min-width:0;overflow-wrap:anywhere}
+.r42 .r42-phone-with-copy button{display:inline-flex;align-items:center;justify-content:center;min-width:36px;width:36px;height:36px;flex:0 0 36px;border-radius:10px;background:#edf5ef;border:1px solid #cddfd2;color:#063d31;font-size:20px;line-height:1;cursor:pointer}
+.r42 .r42-phone-with-copy button:hover{background:#dcefe4}
+.r42 .r42-phone-with-copy button:focus-visible{outline:3px solid #e6ad43;outline-offset:2px}
+.r42 .r42-footer-phones .r42-phone-with-copy{justify-content:flex-start}
+.r42 .r42-footer-phones .r42-phone-with-copy button{width:33px;height:33px;min-width:33px;flex-basis:33px;background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.25)}
+.r42 .r42-footer-phones .r42-phone-with-copy button:hover{background:rgba(255,255,255,.22)}
+@media(max-width:760px){.r42 .r42-contact-copy-actions{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));min-width:0}.r42 .r42-contact-copy-actions button{white-space:normal}}
+@media(max-width:380px){.r42 .r42-contact-copy-actions{grid-template-columns:1fr}}
